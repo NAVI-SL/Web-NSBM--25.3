@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1>Welcome to Sri Lanka Tourism</h1>
+    <p>Sri Lanka is a beautiful island with beaches,mountains,nad culture heritage sites.</p>
+    <img src="https://www.laurewanders.com/wp-content/uploads/2023/11/sigiriya-459197_1920.jpg">
+    <h3>Popular places</h3>
+    <ul>
+        <li>Sigiriya</li>
+        <li>Ella</li>
+        <li>Galle fort</li>
+    </ul>
+    <button onclick="show_msg()">Show Message</button>
+    <button onclick="enter_details()">Enter Details</button>
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        function show_msg() {
+            alert("Welcome to Sri Lanka Tourism!");
+        }
+
+        function enter_details() {
+            var name = prompt("Enter Your Name");
+            var destination = prompt("Enter the Your Destination");
+            var no_guests = prompt("Enter no of guest");
+            alert ("Name: " + name + "\ndestination: " + destination + "\nGuest count: " + no_guests);
+        }
+
+        function calculate() {
+            var days = prompt("Enter no of days")
+        }
+    </script>
+
+</body>
+</html>
