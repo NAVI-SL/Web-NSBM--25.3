@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Study Material Book Shop</h1>
+    <img src="https://images.squarespace-cdn.com/content/v1/680792ab2f964344a8548262/14740f1c-ccb9-4142-b617-245fdbdb869c/1000066260+%281%29.jpg">
+    <table>
+        <tr>
+            <th rowspan="2">BookID</th>
+            <th rowspan="2">Category</th>
+            <th colspan="2">Book Details</th>
+        </tr>
+        <tr>
+            <th>BookName</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td rowspan="2">Programming</td>
+            <td>Web</td>
+            <td>2500</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Js</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td rowspan="2">Database</td>
+            <td>Database Management System</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>SQL</td>
+            <td>2200</td>
+        </tr>
+        <tr>
+            <td colspan="4">Special offer 10% discount</td>
+        </tr>
+    </table>
+
+    <button onclick="check_discount()">Check Discount</button>
+    <button onclick="membership_status()">Membership Status</button>
+    <button onclick="checkStock()">Check stock</button>
+    <button onclick="checkDeliveryDetails()">Delivery details</button>
+
+    <script>
+        function check_discount() {
+            var amount = prompt("Enter the total purchased amount")
+            if(amount > 5000) {
+                alert("You have 15% Discount")
+            } else {
+                alert("No discount")
+            }
+        }
+    </script>
+
+    <script>
+        function membership_status() {
+            let isMember = prompt("Are you Member");
+            if (isMember && isMember.toLowerCase() === "yes") {
+                alert("Membership Benefits: You get an extra 5% off on all purchases and early access to sales!");
+            } else {
+                alert("Please register as a member to enjoy exclusive benefits.");
+            }
+        }
+    </script>
+
+    <script>
+        function checkStock() {
+        const availableStockLimit = 20; 
+        
+        let quantity = prompt("Enter the quantity of books required:");
+            quantity = parseInt(quantity);
+
+            if (quantity <= availableStockLimit) {
+                alert("Good news! The requested stock is available.");
+            } else {
+                alert("Sorry, that quantity is out of stock.");
+            }
+    }
+    </script>
+
+    <script>
+        function checkDeliveryDetails() {
+            let city = prompt("Please enter your city:");
+
+            if (city && city.toLowerCase() === "colombo") {
+                alert("You qualify for FREE delivery!");
+            } else {
+            alert("A standard delivery charge will apply for your location.");
+            }
+        }
+    </script>
+</body>
+</html>

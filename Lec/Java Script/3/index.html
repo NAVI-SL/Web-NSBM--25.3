@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>document.write("Hello World!");</script>
+    </head>
+    <body>
+        <script>
+            var marks = 60;
+            if (marks > 40) {
+                alert("Pass the exam");
+            }
+        </script>
+
+        <script>
+            var results = prompt("Enter your results");
+            if(results > 40) {
+                alert("You passed");
+            }
+        </script>
+
+        <script> 
+            let temperature = prompt("Enter the Current Temperature in Celcius: ")
+
+            if (temperature > 20) {
+                alert("It's a Warm Day.")
+            }
+            else {
+                alert("It's a Cold Day.")
+            }
+        </script>
+
+        <script>
+            var area = prompt("Enter the area");
+            if (area <= 100) {
+                alert("Price of land is $10 000");
+            } else if (area > 101 && area <= 200) {
+                alert("Price of land is $15 000");
+            } else {
+                alert("price of land is $20 000"); 
+            } 
+        </script> 
+        
+        <input type="button" value="generate" onclick="display_name()">
+            <script>
+                function display_name() {
+                    alert("Navitha Navindul" );
+                }
+            </script>
+    </body>
+</html>
