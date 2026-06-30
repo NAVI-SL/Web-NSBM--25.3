@@ -1,0 +1,44 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 40px;
+    color: #444;
+    margin-top: 30px;
+}
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+}
