@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Registration</title>
+</head>
+<body>
+
+<form id="patientForm">
+  <fieldset style="width:500px;">
+    <legend>Patient Information</legend>
+
+    Name:
+    <input type="text" id="name"><br><br>
+
+    Address:
+    <textarea id="address" rows="4" cols="35"></textarea><br><br>
+
+    Birth Date:
+    <input type="date" id="birthdate"><br><br>
+
+    Age:
+    <input type="number" id="age"><br><br>
+
+    Gender:
+    MALE <input type="radio" name="gender" value="Male">
+    FEMALE <input type="radio" name="gender" value="Female"><br><br>
+
+    Disease:
+    <select id="disease">
+      <option value="">Select</option>
+      <option>Fever</option>
+      <option>Diabetes</option>
+      <option>Heart Disease</option>
+      <option>Asthma</option>
+      <option>Other</option>
+    </select><br><br>
+
+    E-mail:
+    <input type="email" id="email"><br><br>
+
+    PIN:
+    <input type="password" id="pin"><br><br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<h3>Entered Patient Details</h3>
+<div id="output"></div>
+
+<script>
+document.getElementById("patientForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  let name = document.getElementById("name").value.trim();
+  let address = document.getElementById("address").value.trim();
+  let birthdate = document.getElementById("birthdate").value;
+  let age = document.getElementById("age").value.trim();
+  let disease = document.getElementById("disease").value;
+  let email = document.getElementById("email").value.trim();
+  let pin = document.getElementById("pin").value.trim();
+
+  let genderInput = document.querySelector('input[name="gender"]:checked');
+  let gender = genderInput ? genderInput.value : "";
+
+  if (name === "" || address === "" || birthdate === "" || age === "" ||
+      gender === "" || disease === "" || email === "" || pin === "") {
+    alert("Please fill all fields correctly.");
+    return;
+  }
+
+  document.getElementById("output").innerHTML =
+    "<p><b>Name:</b> " + name + "</p>" +
+    "<p><b>Address:</b> " + address + "</p>" +
+    "<p><b>Birth Date:</b> " + birthdate + "</p>" +
+    "<p><b>Age:</b> " + age + "</p>" +
+    "<p><b>Gender:</b> " + gender + "</p>" +
+    "<p><b>Disease:</b> " + disease + "</p>" +
+    "<p><b>E-mail:</b> " + email + "</p>" +
+    "<p><b>PIN:</b> " + pin + "</p>";
+});
+</script>
+
+</body>
+</html>
