@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>Explore Sri Lanka</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Explore Sri Lanka</h1>
+	<p>
+		Sri Lanka is a beautiful island with golden beaches, green mountains, and amazing wildlife.
+		It is famous for its rich culture, ancient temples, and delicious food.
+		Visitors can enjoy safaris, hiking, and relaxing by the sea.
+		Sri Lanka is a perfect destination for nature lovers and adventure seekers.
+	</p>
+	<table>
+		<tr>
+			<th colspan="4">Travel Packages</th>
+		<tr>
+		<tr>
+			<th>Destination</th>
+			<th>Activities</th>
+			<th>Duration</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td rowspan="2">Ella</td>
+			<td>Hiking</td>
+			<td>2 Days </td>
+			<td>$150</td>
+		</tr>
+		<tr>
+			<td>Train Rides</td>
+			<td>1 Day</td>
+			<td>$80</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Yala</td>
+			<td>Wildlife Safari</td>
+			<td>1 Day</td>
+			<td>$120</td>
+		</tr>
+		<tr>
+			<td>Camping </td>
+			<td>2 Days </td>
+			<td>$200</td>
+		</tr>
+	</table>
+	<br><br>
+	<form>
+		<fieldset>
+			<legend>Book Your Trip</legend>
+			
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br><br>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br><br>
+			
+			<label>Travel Type:</label>
+			<input type="radio" name="Travel_Type" value="Solo">Solo
+			<input type="radio" name="Travel_Type" value="Family">Family
+			<input type="radio" name="Travel_Type" value="Group">Group
+			<br><br>
+			
+			<label>Preferred Activities:</label><br>
+			<input type="checkbox" name="Activities" value="Hiking">Hiking
+			<input type="checkbox" name="Activities" value="Swimming">Swimming
+			<input type="checkbox" name="Activities" value="Safari">wildlife Safari
+			<input type="checkbox" name="Activities" value="Tours">cultural Tours
+			<br><br>
+			
+			<label>Select Country:</label>
+			<select name="Country">
+				<option>Sri Lanka</option>
+				<option>South Korea</option>
+				<option>America</option>
+				<option>China</option>
+			</Select>
+			<br><br>
+			
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>
