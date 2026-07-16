@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Activity 03</title>
+</head>
+
+<body>
+
+    <p id="remainMoney"></p>
+
+    <script>
+        let haveMoney = 500;
+        let groceries = 250;
+        let clothes = 100;
+
+        let remainMoney = haveMoney - groceries - clothes;
+
+        document.getElementById('remainMoney').innerHTML = 
+            "Remaining amount in wallet: $" + remainMoney;
+    </script>
+
+</body>
+</html>
