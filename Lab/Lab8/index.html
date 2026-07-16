@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Create a Student Registration Form with Validation</title>
+	<script>
+		function Registration() {
+			var name = document.getElementById('name').value;
+			var age = document.getElementById('age').value;
+			var email = document.getElementById('email').value;
+			
+			document.getElementByID('details').innerText = "total";
+		
+		
+		}
+	
+	</script>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<label>Student Name:</label>
+			<input type="text" id="name" name="name" required><br><br>
+			
+			<label>Age:</label>
+			<input type="number" id="age" name="age" required><br><br>
+			
+			<label>Email Address:</label>
+			<input type="email" id="email" name="email" required><br><br>
+		
+			<label>Gender:</label>
+			<input type="radio" id="gender" name="Gender" value="male" required>Male
+			<input type="radio" id="gender" name="Gender" value="female" required>Female
+			<br><br>
+			
+			<label>Course Selection:</label>
+			<select id="course" name="Course">
+				<option>Information Technology</option>
+				<option>Data Science</option>
+				<option>Business Management</option>
+				<option>Software Engineering </option>
+			</select>
+			<br><br>
+			
+			<label>Terms and Conditions:</label>
+			<input type="checkbox" id="terms_and_conditions" name="terms_and_conditions" required>
+			<br><br>
+			
+			<button type="not button" id="details" onclick="Registration()">Register
+		</fieldset>
+	</form>
+
+</body>
+</html>
