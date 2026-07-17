@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Activity 06</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<h1>Food Price Calculator</h1>
+			
+			<label>Price of the food:</label>
+			<input type="text" id="price" name="price" required>
+			<br><br>
+			
+			<label>Quantity:</label>
+			<input type="text" id="quantity" name="quantity" required>
+			<br><br>
+			
+			<button type="button" onclick="calculateTotal()">Calculate Total</button>
+			<br><br>
+			
+			<h2>Total Value: $<span id="totalvalue">0.00</h2>
+		</fieldset>
+	</form>
+	<script>
+		function calculateTotal() {
+			var price = document.getElementById('price').value;
+			var quantity = document.getElementById('quantity').value;
+			
+			var total = price * quantity;
+			
+			document.getElementById('totalvalue').innerHTML = total;
+		}	
+	</script>
+</body>
+</html>
