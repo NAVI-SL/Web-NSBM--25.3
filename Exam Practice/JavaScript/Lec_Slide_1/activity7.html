@@ -4,6 +4,23 @@
 </head>
 <body>
 	<h1>Total Books Revenue Calculation</h1>
-    
+	<p id="totalStoryBooks"></p>
+	<p id="totalWritingBooks"></p>
+	<p id="totalBothBooks"></p>
+	
+	<script>
+		var storyBooks = 200;
+		var writingBooks = 100;
+		var soldstoryBooks = 40;
+		var soldwritingBooks = 20;
+		
+		var totalsalesofStoryBooks = storyBooks * soldstoryBooks;
+		var totalsalesofWritingBooks = writingBooks * soldwritingBooks;                   
+		var totalbothBooks = totalsalesofStoryBooks + totalsalesofWritingBooks;
+		
+		document.getElementById('totalStoryBooks').innerHTML = "Total revenue from the sale of story books: Rs." + totalsalesofStoryBooks;
+		document.getElementById('totalWritingBooks').innerHTML = "Total revenue from the sale of writing books: Rs." + totalsalesofWritingBooks;
+		document.getElementById('totalBothBooks').innerHTML = "Total revenue from the sale of both story and writing books: Rs." + totalbothBooks;
+	</script>
 </body>
 </html>
