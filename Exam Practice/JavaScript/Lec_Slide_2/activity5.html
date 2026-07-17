@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Activity 05</title>
+</head>
+<body>
+	<script>
+		var area = prompt("Enter the area of the land property (in square meters):");
+		var priceofLand;
+		
+		if (area <= 100) {
+			priceofLand = 10000;
+		} else if (area <= 200) {
+			priceofLand = 15000;
+		} else {
+			priceofLand = 20000;
+		}
+		window.alert("The Price of the land property is $" + priceofLand);
+	</script>
+</body>
+</html>
