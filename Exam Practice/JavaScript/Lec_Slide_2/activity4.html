@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Activity 04</title>
+</head>
+<body>
+	<div id="output"></div>
+	
+	<script>
+		var weight = prompt("Enter the weight of the package in kilograms:");
+		var shippingCost;
+		
+		if (weight <= 5) {
+			shippingCost = 10;
+		} else if (weight <= 10) {
+			shippingCost = 15;
+		} else {
+			shippingCost = 20;
+		}
+		
+		document.getElementById('output').innerHTML = "Shipping cost: $" + shippingCost;
+	</script>
+</body>
+</html>

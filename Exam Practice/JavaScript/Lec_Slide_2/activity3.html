@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Activity 03</title>
+</head>
+<body>
+	<div id="output"></div>
+	
+	<script>
+		var currentScore = 75;
+		var result;
+		
+		if (currentScore >= 90) {
+			result = "Excellent";
+		} else if (currentScore >= 80) {
+			result = "Good";
+		} else if  (currentScore >= 70) {
+			result = "Average";
+		} else if  (currentScore >= 60) {
+			result = "Below Average";
+		} else {
+			result = "Fail"
+		}
+		
+		document.getElementById('output').innerHTML = result;
+	</script>
+</body>
+</html>
